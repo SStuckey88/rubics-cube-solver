@@ -65,7 +65,7 @@ if "action" == "action":
     def make_white_cross(white_location, yellow_center):
         cross_locations = [[yellow_center, 0, 1], [yellow_center, 1, 0], [yellow_center, 1, 2], [yellow_center, 2, 1]]
         for i in white_location:
-            if i[0] = yellow_center:
+            if i[0] == yellow_center:
                 cross_locations
 
  
@@ -236,7 +236,7 @@ rubic_list = create_rubiks_list(cube_up, cube_length, cube_width)
 global curr_face
 curr_face = 0
 
-test3()
+test1()
 
 if cube_up ==3 and cube_length == 3 and cube_width == 3:
     solve3x3()
