@@ -171,6 +171,17 @@ if "algorithms" == "algorithms":
                 new_face ==3
         face_rotate(new_face)
 
+    def middle_turn_up():
+        global curr_face
+        inbetween_list = []
+        inbetween_list = rubic_list[5][1]
+        rubic_list[5][1] = rubic_list[1][1].reverse()
+        rubic_list[1][1] = rubic_list[4][0]
+        rubic_list[4][0] = rubic_list[0][0]
+        rubic_list[0][0] = inbetween_list
+        new_face = 2
+        
+
 
     def front_face_left():
         inbetween_list = []
